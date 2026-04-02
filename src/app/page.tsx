@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { products } from "@/data/products";
 import { HomeClient } from "./HomeClient";
@@ -114,11 +115,39 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="flex items-center justify-center rounded-2xl bg-neutral-800 p-12">
-              <div className="text-center text-neutral-500">
-                <p className="text-6xl font-bold text-neutral-700">TC</p>
-                <p className="mt-2 text-sm">The Original Cones</p>
-              </div>
+              <Image
+                src="/logos/the-original-cones.png"
+                alt="The Original Cones by Mountain High — Since 1994"
+                width={400}
+                height={280}
+                className="max-w-full"
+              />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partner */}
+      <section className="border-y border-neutral-100 bg-neutral-50">
+        <div className="mx-auto max-w-7xl px-4 py-12">
+          <p className="mb-8 text-center text-sm font-semibold tracking-widest text-neutral-400">
+            UNSERE PARTNER
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12">
+            <Image
+              src="/logos/the-original-cones.png"
+              alt="The Original Cones by Mountain High"
+              width={200}
+              height={140}
+              className="h-16 w-auto object-contain"
+            />
+            <Image
+              src="/logos/raw-classic.png"
+              alt="RAW Classic Rolling Papers"
+              width={200}
+              height={100}
+              className="h-12 w-auto object-contain"
+            />
           </div>
         </div>
       </section>
