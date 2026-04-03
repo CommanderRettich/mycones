@@ -53,17 +53,6 @@ export function Footer() {
             Vandenberg Special Products B.V. — Mountain High | Rotterdam, NL
             seit 1994
           </p>
-          <p className="mt-1">
-            Gebaut von{" "}
-            <a
-              href="https://maxmy.business"
-              className="text-neutral-500 underline hover:text-neutral-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              MaxMy.business
-            </a>
-          </p>
         </div>
       </div>
     </footer>
